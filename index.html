@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naina Sethia | Portfolio</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- JS -->
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <!-- Background FX -->
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+    <div class="bg-orb orb-3"></div>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <h1 class="logo">N<span>•</span>S</h1>
+
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span class="nav-toggle-line"></span>
+                <span class="nav-toggle-line"></span>
+                <span class="nav-toggle-line"></span>
+            </button>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <!-- <li><a href="#achievements">Achievements</a></li> -->
+                <!-- <li><a href="#research">Research</a></li> -->
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <button class="theme-toggle" aria-label="Toggle theme">
+                        <i class="fas fa-moon theme-icon theme-icon-dark"></i>
+                        <i class="fas fa-sun theme-icon theme-icon-light"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero section">
+        <div class="container hero-container reveal">
+            <div class="hero-content">
+                <p class="hero-tag">Cybersecurity • Ethical Hacking • Python</p>
+                <h2>Hi, I'm <span class="highlight">Naina Sethia</span></h2>
+                <p class="subtitle">BCA Student | Developer | Problem Solver</p>
+                <p class="description">
+                    I love building secure, smart, and user-friendly solutions —
+                    from encryption tools to full-stack applications.
+                </p>
+                <div class="cta-buttons">
+                    <a href="resume.pdf" download class="btn btn-primary">
+                        <i class="fas fa-download"></i>
+                        Download Resume
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-paper-plane"></i>
+                        Get In Touch
+                    </a>
+                </div>
+                <div class="hero-meta">
+                    <div class="meta-item">
+                        <span class="meta-label">Current</span>
+                        <span class="meta-value">BCA • 2nd Year</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">CGPA (1st year)</span>
+                        <span class="meta-value">9.30 / 10</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Focus</span>
+                        <span class="meta-value">Cybersecurity & Networking</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <div class="hero-image-glass">
+                    <img src="profile.jpg" alt="Naina Sethia Profile Picture">
+                    <div class="hero-ring hero-ring-1"></div>
+                    <div class="hero-ring hero-ring-2"></div>
+                    <div class="hero-ring hero-ring-3"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about section">
+        <div class="container reveal">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid glass-card">
+                <div class="about-text">
+                    <p>
+                        I’m Naina Sethia, a BCA student at Amity University, Raipur, passionate about
+                        cybersecurity, ethical hacking, and Python. I enjoy learning through hands-on projects,
+                        capture-the-flag style challenges, and hackathons like SIH’24 and SIH’25.
+                    </p>
+                    <p>
+                        As Vice President of the Devity Club, I organise workshops, mentor peers, and collaborate
+                        on technical events. This helps me sharpen both my technical and leadership skills while
+                        building a strong community of learners.
+                    </p>
+                </div>
+                <div class="education">
+                    <h3>Education</h3>
+                    <p><strong>Amity University, Chhattisgarh</strong></p>
+                    <p>Bachelor's Degree in Computer Applications</p>
+                    <p>Currently in 2nd Year</p>
+                    <p>CGPA (1st year): <strong>9.30 / 10</strong></p>
+                    <p>Expected Graduation: <strong>June 2027</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects section">
+        <div class="container reveal">
+            <h2 class="section-title">Projects</h2>
+            <p class="section-subtitle">A few things I’ve built, focused on security, tools, and real-world use cases.
+            </p>
+
+            <div class="projects-grid">
+                <div class="project-card glass-card">
+                    <div class="project-header">
+                        <h3>Text Encryption & Decryption (Caesar Cipher)</h3>
+                        <span class="project-pill">Security Tool</span>
+                    </div>
+                    <p>
+                        A Python-based tool to encrypt and decrypt messages using a configurable Caesar Cipher,
+                        with an interactive GUI for easy experimentation.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Caesar Cipher</span>
+                        <span class="tech-tag">GUI</span>
+                    </div>
+                    <a href="https://github.com/nainasethia/CST_CS_T1" target="_blank" class="project-link">
+                        View Project <i class="fas fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+
+                <div class="project-card glass-card">
+                    <div class="project-header">
+                        <h3>Image Encryption Tool</h3>
+                        <span class="project-pill">Cybersecurity</span>
+                    </div>
+                    <p>
+                        A Python application implementing pixel-level encryption using swapping and arithmetic
+                        operations to demonstrate image data protection concepts.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Image Processing</span>
+                        <span class="tech-tag">Encryption</span>
+                        <span class="tech-tag">Decryption</span>
+                        <span class="tech-tag">GUI</span>
+                    </div>
+                    <a href="https://github.com/nainasethia/CST_CS_T2" target="_blank" class="project-link">
+                        View Project <i class="fas fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+
+                <div class="project-card glass-card">
+                    <div class="project-header">
+                        <h3>Password Strength Analyzer</h3>
+                        <span class="project-pill">Awareness Tool</span>
+                    </div>
+                    <p>
+                        A Python program that evaluates password strength based on length, character diversity,
+                        and special symbols, giving instant feedback to users.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Regex</span>
+                    </div>
+                    <a href="https://github.com/nainasethia/CST_CS_T3" target="_blank" class="project-link">
+                        View Project <i class="fas fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+
+                <div class="project-card glass-card">
+                    <div class="project-header">
+                        <h3>Basic Keylogger (Controlled Environment)</h3>
+                        <span class="project-pill">Ethical Security</span>
+                    </div>
+                    <p>
+                        A controlled-environment keylogger built in Python to understand keystroke logging,
+                        secure file handling, and the importance of ethical usage in cybersecurity.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">File Handling</span>
+                        <span class="tech-tag">Logging</span>
+                    </div>
+                    <a href="https://github.com/nainasethia/CST_CS_T4" target="_blank" class="project-link">
+                        View Project <i class="fas fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+
+                <div class="project-card glass-card">
+                    <div class="project-header">
+                        <h3>Network Management Project</h3>
+                        <span class="project-pill">Infra</span>
+                    </div>
+                    <p>
+                        Configured enterprise-style servers on Red Hat Enterprise Linux, set up DNS,
+                        secure access controls, and managed network resources to strengthen Linux skills.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Linux</span>
+                        <span class="tech-tag">DNS Server</span>
+                        <span class="tech-tag">Networking</span>
+                    </div>
+                    <a href="https://github.com/nainasethia/Network-Management-Project" target="_blank"
+                        class="project-link">
+                        View Project <i class="fas fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+
+                <div class="project-card glass-card">
+                    <div class="project-header">
+                        <h3>Student/Admin Management System</h3>
+                        <span class="project-pill">Web App</span>
+                    </div>
+                    <p>
+                        A secure multi-role PHP–MySQL web app with student and admin modules, validation using JS,
+                        and deployment via WampServer.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">PHP</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Bootstrap</span>
+                    </div>
+                    <a href="https://github.com/nainasethia/Student-Admin-Management-System" target="_blank"
+                        class="project-link">
+                        View Project <i class="fas fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+
+                <div class="project-card glass-card">
+                    <div class="project-header">
+                        <h3>Feature-Rich Utility App</h3>
+                        <span class="project-pill">Android</span>
+                    </div>
+                    <p>
+                        An Android app built with Java and Firebase authentication, including tools like calculator,
+                        torch, media player, sensor-based features, and connectivity toggles.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">Android Studio</span>
+                        <span class="tech-tag">Firebase</span>
+                    </div>
+                    <a href="https://github.com/nainasethia/Feature-Rich-Utility-App" target="_blank"
+                        class="project-link">
+                        View Project <i class="fas fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills section">
+        <div class="container reveal">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category glass-card">
+                    <h3>Programming Languages</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>C++</li>
+                    </ul>
+                </div>
+                <div class="skill-category glass-card">
+                    <h3>Tools & Platforms</h3>
+                    <ul>
+                        <li>Git & GitHub</li>
+                        <li>VS Code</li>
+                        <li>Linux / Kali Linux</li>
+                        <li>Networking Basics</li>
+                        <li>WampServer</li>
+                        <li>Android Studio</li>
+                    </ul>
+                </div>
+                <div class="skill-category glass-card">
+                    <h3>Databases</h3>
+                    <ul>
+                        <li>MySQL</li>
+                        <li>SQLite / MySQLite</li>
+                    </ul>
+                </div>
+                <div class="skill-category glass-card">
+                    <h3>Web Development</h3>
+                    <ul>
+                        <li>HTML & CSS</li>
+                        <li>JavaScript</li>
+                        <li>PHP</li>
+                        <li>Bootstrap</li>
+                    </ul>
+                </div>
+                <div class="skill-category glass-card">
+                    <h3>Soft Skills</h3>
+                    <ul>
+                        <li>Excellent Communication</li>
+                        <li>Team Management & Leadership</li>
+                        <li>Decision Making & Agility</li>
+                        <li>Creative & Critical Thinking</li>
+                        <li>Emotional Intelligence</li>
+                        <li>Problem Solving</li>
+                    </ul>
+                </div>
+                <div class="skill-category glass-card">
+                    <h3>Languages</h3>
+                    <ul>
+                        <li>English</li>
+                        <li>Hindi</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section id="achievements" class="achievements section">
+        <div class="container reveal">
+            <h2 class="section-title">Achievements & Certifications</h2>
+            <div class="achievements-grid">
+                <div class="achievement-card glass-card">
+                    <i class="fas fa-trophy achievement-icon"></i>
+                    <h3>Dean's List</h3>
+                    <p class="achievement-date">Fall 2024 - Spring 2025</p>
+                    <p>Recognized for academic excellence with a high GPA.</p>
+                </div>
+                <div class="achievement-card glass-card">
+                    <i class="fas fa-certificate achievement-icon"></i>
+                    <h3>AWS Certified Cloud Practitioner</h3>
+                    <p class="achievement-date">Issued: January 2025</p>
+                    <p>Foundational understanding of AWS Cloud services and architecture.</p>
+                </div>
+                <div class="achievement-card glass-card">
+                    <i class="fas fa-medal achievement-icon"></i>
+                    <h3>Hackathon Winner</h3>
+                    <p class="achievement-date">University Hackathon 2024</p>
+                    <p>First place for developing an innovative healthcare solution.</p>
+                </div> -->
+    <!-- <div class="achievement-card glass-card">
+                    <i class="fas fa-certificate achievement-icon"></i>
+                    <h3>Google Data Analytics Certificate</h3>
+                    <p class="achievement-date">Issued: December 2024</p>
+                    <p>Professional certificate in data analysis and visualization.</p>
+                </div>
+                <div class="achievement-card glass-card">
+                    <i class="fas fa-award achievement-icon"></i>
+                    <h3>Best Research Paper Award</h3>
+                    <p class="achievement-date">Student Conference 2024</p>
+                    <p>Awarded for outstanding research in machine learning applications.</p>
+                </div>
+                <div class="achievement-card glass-card">
+                    <i class="fas fa-certificate achievement-icon"></i>
+                    <h3>Meta Front-End Developer Certificate</h3>
+                    <p class="achievement-date">Issued: November 2024</p>
+                    <p>Professional certificate in modern front-end development.</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- <section id="research" class="research section">
+        <div class="container reveal">
+            <h2 class="section-title">Research Papers</h2>
+            <div class="research-list">
+                <div class="research-paper glass-card">
+                    <div class="paper-header">
+                        <i class="fas fa-file-alt paper-icon"></i>
+                        <div class="paper-info">
+                            <h3>Machine Learning Approaches for Predictive Healthcare Analytics</h3>
+                            <p class="paper-authors">John Doe, Dr. Jane Smith</p>
+                            <p class="paper-venue">International Conference on AI in Healthcare, 2024</p>
+                        </div>
+                    </div>
+                    <p class="paper-abstract">
+                        This paper explores the application of machine learning algorithms in predicting patient
+                        outcomes and optimizing healthcare delivery systems.
+                    </p>
+                    <div class="paper-links">
+                        <a href="#" class="paper-link"><i class="fas fa-download"></i> PDF</a>
+                        <a href="#" class="paper-link"><i class="fas fa-link"></i> DOI</a>
+                    </div>
+                </div> -->
+
+    <!-- <div class="research-paper glass-card">
+                    <div class="paper-header">
+                        <i class="fas fa-file-alt paper-icon"></i>
+                        <div class="paper-info">
+                            <h3>Optimizing Web Performance Through Advanced Caching Strategies</h3>
+                            <p class="paper-authors">John Doe, Prof. Michael Johnson</p>
+                            <p class="paper-venue">Journal of Web Technologies, Vol. 15, 2024</p>
+                        </div>
+                    </div>
+                    <p class="paper-abstract">
+                        An investigation into modern caching techniques and their impact on web application performance
+                        and user experience.
+                    </p>
+                    <div class="paper-links">
+                        <a href="#" class="paper-link"><i class="fas fa-download"></i> PDF</a>
+                        <a href="#" class="paper-link"><i class="fas fa-link"></i> DOI</a>
+                    </div>
+                </div> -->
+
+    <!-- <div class="research-paper glass-card">
+                    <div class="paper-header">
+                        <i class="fas fa-file-alt paper-icon"></i>
+                        <div class="paper-info">
+                            <h3>Blockchain Applications in Supply Chain Management</h3>
+                            <p class="paper-authors">John Doe, Sarah Williams, Dr. Robert Brown</p>
+                            <p class="paper-venue">IEEE Blockchain Conference, 2023</p>
+                        </div>
+                    </div>
+                    <p class="paper-abstract">
+                        This research examines the potential of blockchain technology to enhance transparency and
+                        efficiency in supply chain operations.
+                    </p>
+                    <div class="paper-links">
+                        <a href="#" class="paper-link"><i class="fas fa-download"></i> PDF</a>
+                        <a href="#" class="paper-link"><i class="fas fa-link"></i> DOI</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section id="contact" class="contact section">
+        <div class="container reveal">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="contact-intro">
+                I'm always open to new opportunities, collaborations, and interesting problems in cybersecurity
+                and development. Let’s connect!
+            </p>
+            <div class="contact-methods">
+                <div class="contact-item glass-card">
+                    <i class="fas fa-envelope contact-icon"></i>
+                    <h3>Email</h3>
+                    <p><a href="mailto:nainasethia237@gmail.com">nainasethia237@gmail.com</a></p>
+                </div>
+                <div class="contact-item glass-card">
+                    <i class="fab fa-linkedin contact-icon"></i>
+                    <h3>LinkedIn</h3>
+                    <p><a href="https://www.linkedin.com/in/nainasethia/"
+                            target="_blank">linkedin.com/in/nainasethia</a></p>
+                </div>
+                <div class="contact-item glass-card">
+                    <i class="fab fa-github contact-icon"></i>
+                    <h3>GitHub</h3>
+                    <p><a href="https://github.com/nainasethia" target="_blank">github.com/nainasethia</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-social">
+                <a href="mailto:nainasethia237@gmail.com" class="footer-icon" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/nainasethia/" target="_blank" class="footer-icon" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/nainasethia" target="_blank" class="footer-icon" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <p>&copy; 2025 Naina Sethia. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
