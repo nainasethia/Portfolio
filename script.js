@@ -99,3 +99,138 @@ internalLinks.forEach((link) => {
         }
     });
 });
+
+// =================================================
+// ========== ACHIEVEMENT IMAGE MODAL ===============
+// =================================================
+
+const achievementModal = document.getElementById("achievementModal");
+const achievementModalImg = document.getElementById("achievementModalImg");
+const achievementClose = achievementModal.querySelector(".close-modal");
+
+document.querySelectorAll(".achievement-img").forEach(img => {
+    img.addEventListener("click", () => {
+        achievementModal.style.display = "flex";;
+        achievementModalImg.src = img.src;
+    });
+});
+
+achievementClose.addEventListener("click", () => {
+    achievementModal.style.display = "none";
+});
+
+achievementModal.addEventListener("click", (e) => {
+    if (e.target === achievementModal) {
+        achievementModal.style.display = "none";
+    }
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    /* =================================================
+       SINGLE CERTIFICATE MODAL (GLOBAL)
+    ================================================= */
+
+    const achievementModal = document.getElementById("achievementModal");
+    const achievementModalImg = document.getElementById("achievementModalImg");
+    const achievementClose = achievementModal.querySelector(".close-modal");
+
+    function openSingleCert(src) {
+        achievementModalImg.src = src;
+        achievementModal.style.display = "flex";
+        document.body.classList.add("modal-open");
+    }
+
+    function closeSingleCert() {
+        achievementModal.style.display = "none";
+        achievementModalImg.src = "";
+        document.body.classList.remove("modal-open");
+    }
+
+    // Attach ONLY to standalone certificates
+    document.querySelectorAll(".achievement-img").forEach(img => {
+        if (img.closest(".multi-cert")) return;
+
+        img.addEventListener("click", (e) => {
+            e.stopPropagation();
+            openSingleCert(img.src);
+        });
+    });
+
+    achievementClose.addEventListener("click", closeSingleCert);
+
+    achievementModal.addEventListener("click", (e) => {
+        if (e.target === achievementModal) closeSingleCert();
+    });
+
+    /* =================================================
+       MULTI CERTIFICATE MODAL
+    ================================================= */
+
+    const certGroups = {
+        "ethical-hacking": [
+            "certificates/ccall.jpg",
+            "certificates/cci.jpg",
+            "certificates/ccii.jpg",
+            "certificates/cciii.jpg",
+            "certificates/cciv.jpg",
+            "certificates/ccv.jpg",
+            "certificates/ccvi.jpg",
+            "certificates/ccvii.jpg",
+            "certificates/ccviii.jpg"
+        ]
+    };
+
+    const multiCertModal = document.getElementById("multiCertModal");
+    const multiCertGrid = document.getElementById("multiCertGrid");
+    const multiCertClose = multiCertModal.querySelector(".close-modal");
+
+    document.querySelectorAll(".multi-cert").forEach(card => {
+        card.addEventListener("click", (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+
+            // 🔥 FORCE CLOSE SINGLE CERT (KEY FIX)
+            closeSingleCert();
+
+            const group = card.dataset.certGroup;
+            const images = certGroups[group];
+            if (!images) return;
+
+            document.body.classList.add("modal-open");
+            multiCertGrid.innerHTML = "";
+
+            images.forEach(src => {
+                const img = document.createElement("img");
+                img.src = src;
+                img.alt = "Certificate";
+
+                // ✅ SAME GUI AS SINGLE CERT
+                img.addEventListener("click", ev => {
+                    ev.stopPropagation();
+                    openSingleCert(src);
+                });
+
+                multiCertGrid.appendChild(img);
+            });
+
+            multiCertModal.style.display = "flex";
+        });
+    });
+
+    function closeMultiCertModal() {
+        multiCertModal.style.display = "none";
+        multiCertGrid.innerHTML = "";
+        document.body.classList.remove("modal-open");
+    }
+
+    multiCertClose.addEventListener("click", (e) => {
+        e.stopPropagation();
+        closeMultiCertModal();
+    });
+
+    multiCertModal.addEventListener("click", (e) => {
+        if (e.target === multiCertModal) closeMultiCertModal();
+    });
+
+});
