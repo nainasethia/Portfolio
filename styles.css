@@ -655,6 +655,185 @@ html[data-theme="light"] .education p {
     color: #111827;
 }
 
+/* ================================================= */
+/* ========== EXPERIENCE SECTION =================== */
+/* ================================================= */
+
+.experience-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.experience-item {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 2rem;
+    padding: 1.8rem;
+}
+
+/* LEFT SIDE */
+.experience-left {
+    text-align: center;
+}
+
+.experience-logo {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+.company-name {
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+
+.experience-duration,
+.experience-location {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* RIGHT SIDE */
+.experience-right {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.role-title {
+    font-size: 1.1rem;
+    color: var(--accent-strong);
+}
+
+.experience-summary {
+    font-size: 0.95rem;
+    opacity: 0.95;
+}
+
+.experience-points {
+    padding-left: 1.2rem;
+}
+
+.experience-points li {
+    font-size: 0.9rem;
+    margin-bottom: 0.4rem;
+}
+
+.experience-tech {
+    font-size: 0.9rem;
+    opacity: 0.85;
+}
+
+/* ================================================= */
+/* ========== LEADERSHIP TIMELINE ================== */
+/* ================================================= */
+
+.leadership-timeline {
+    position: relative;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Vertical line */
+.leadership-timeline::before {
+    content: "";
+    position: absolute;
+    left: 6px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(180deg, #a955f7d1, #6365f1c6);
+    opacity: 0.6;
+}
+
+/* Timeline item */
+.timeline-item {
+    position: relative;
+    display: flex;
+    gap: 1.2rem;
+}
+
+/* Glowing dot */
+.timeline-dot {
+    position: absolute;
+    left: -23px;
+    /* align with line */
+    top: 4px;
+
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+
+    background: #a855f7;
+    box-shadow:
+        0 0 0 4px rgba(168, 85, 247, 0.25),
+        0 0 15px rgba(168, 85, 247, 0.8);
+
+    transform: translateX(-50%);
+    /* centers dot on 2px line */
+}
+
+/* Content */
+.timeline-content {
+    padding-left: 1.5rem;
+}
+
+.timeline-content .role-title {
+    margin: 0;
+    font-size: 1.05rem;
+    color: var(--accent-strong);
+}
+
+.role-duration {
+    font-size: 0.85rem;
+    opacity: 0.8;
+    display: block;
+    margin-bottom: 0.4rem;
+}
+
+.timeline-content p {
+    font-size: 0.9rem;
+    opacity: 0.95;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .leadership-timeline {
+        padding-left: 20px;
+    }
+
+    .timeline-content {
+        padding-left: 1.2rem;
+    }
+}
+
+/* ================================================= */
+/* ========== RESPONSIVE =========================== */
+/* ================================================= */
+
+@media (max-width: 768px) {
+    .experience-item {
+        grid-template-columns: 1fr;
+    }
+
+    .experience-left {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        text-align: left;
+    }
+
+    .experience-logo {
+        margin-bottom: 0;
+    }
+}
+
+
+
 /* ===== PROJECTS ===== */
 
 .projects-grid {
@@ -885,6 +1064,33 @@ html[data-theme="light"] .paper-link {
     background: rgba(255, 255, 255, 0.9);
     color: #111827;
 }
+
+/* ================================================= */
+/* ========== TESTIMONIAL BUTTON =================== */
+/* ================================================= */
+
+.testimonial-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.65rem 1.5rem;
+
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+
+    border-radius: 999px;
+    border: 1px solid var(--border-card);
+    background: linear-gradient(135deg, #2f0457, #030443);
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.testimonial-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(99, 102, 241, 0.45);
+}
+
 
 /* ===== CONTACT ===== */
 
